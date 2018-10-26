@@ -16,7 +16,7 @@ else
 <style type="text/css">
   #yourinfo {
       left: 100px;
-      top:  100px;
+      top:  50px;
       width: 300px;
       height: 500px;
       margin: 20px auto;
@@ -39,7 +39,7 @@ else
 <hr>
 <p>设备属性定义：</p>
 <p align='center'>
-<textarea id="device_setting_json" rows=20 cols=50 onchange="updateTransData();"  >
+<textarea id="device_setting_json" rows=25 cols=50 onchange="updateTransData();"  >
 {
   "@context": [
         "https://schema.org/",
@@ -57,7 +57,7 @@ else
   "authenticationCredential": [
       {
           "type": "RsaCryptographicKey",
-          "publicKeyPem": "-----BEGIN PUBLIC KEY\r\n..........\r\nEND PUBLIC KEY-----"
+          "publicKeyPem": "-----BEGIN PUBLIC KEY\r\n在这里输入新设备的公钥\r\nEND PUBLIC KEY-----"
       }
   ]
 }</textarea>

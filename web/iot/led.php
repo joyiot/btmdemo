@@ -29,7 +29,7 @@ for($x=0;$x<$matrix_width;$x++){
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>PPkIOT发送LED点阵设置数据</title>
+<title>JoyIOT发送LED点阵设置数据</title>
 <link rel="stylesheet" href="css/joyiot.css" />
 <style type="text/css">
  

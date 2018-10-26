@@ -1,0 +1,10 @@
+树莓派的基础Linux环境安装、温湿度传感器和LED点阵的连接配置方式在网上有比较详细的资料可以查阅，下面几个网址可供参考：
+
+Raspberry Pi 3简明配置教程：  
+  https://medium.com/@molimowang/raspberry-pi-3%E7%AE%80%E6%98%8E%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B-a575f20a7361
+
+树莓派三使用max7219 led点阵: 
+  https://blog.csdn.net/zyaiwmy/article/details/70224250
+
+树莓派控制温湿度传感器DHT11: 
+  http://guojianxiang.com/posts/2015-11-26-RP_Controle_Dht11.html

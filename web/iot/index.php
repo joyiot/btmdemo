@@ -38,12 +38,13 @@ if(strcmp($obj_resp['status'],'success')===0){
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>JoyIOT-趣联网（融合多链的物联网DAPP Demo）</title>
+<title>JoyIOT-趣联网（与物联网软硬件结合的DAPP Demo）</title>
 <link rel="stylesheet" href="css/joyiot.css" />
 <style type="text/css">
   .square {
-      width: 280px;
-      height: 300px;
+      width: 180px;
+      height: 200px;
+      color:#fff;
       background-color: #203060; 
       margin: 10px auto;
       font-size:9px;
@@ -83,10 +84,10 @@ foreach($array_sets as $obj_set){
 
   $str_pub_time = formatTimestampForView($obj_set['block_time'],false);
    
-  $leftx = 55+($ss % 3)*300 ;
-  $topy  = 65+floor($ss / 3)*310;
+  $leftx = 55+($ss % 3)*200 ;
+  $topy  = 65+floor($ss / 3)*210;
   
-  echo '<div class="square" style="left: ',$leftx,'px;top: ',$topy,'px;" ><center>',$str_pub_time,'<br><a href="device.php?device_odin=',$str_device_odin,'"><img width="256" height="256" src="',$str_img_data_url,'" border=0><br>';
+  echo '<div class="square" style="left: ',$leftx,'px;top: ',$topy,'px;" ><center>',$str_pub_time,'<br><a href="device.php?device_odin=',$str_device_odin,'"><img width="156" height="156" src="',$str_img_data_url,'" border=0><br>';
   
   echo '<h2>',$str_title,'</h2></a>';
 

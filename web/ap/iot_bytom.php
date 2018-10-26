@@ -84,11 +84,23 @@ if(count($odin_chunks)==1){
   if($tmp_posn===0 || $tmp_posn>0 ){
      $device_pubkey=substr($device_pubkey,0,$tmp_posn);
   }
-  $device_pubkey=str_replace("\r\n",'\r\n',$device_pubkey);
-  //echo '$device_pubkey=',$device_pubkey;
   
+  
+  $tmp_array_content=array(
+    "ver"=>1,
+    "vd_set"=>array(
+      "algo"=>"SHA256withRSA",
+      "pubkey"=>$device_pubkey
+    ),
+    "device_set"=>$tmp_device_info,
+  );
+
   $str_content_type='text/json';
-  $str_resp_content='{"ver":1,"auth":"0","vd_set":{"cert_uri":"","algo":"SHA256withRSA","pubkey":"'.$device_pubkey.'"},"ap_set":{"0":{"url":"http://btmdemo.ppkpub.org/joy/ap/iot_bytom.php"}}}';
+  $str_resp_content=json_encode($tmp_array_content);
+  
+  //$device_pubkey=str_replace("\r\n",'\r\n',$device_pubkey);
+  //echo '$device_pubkey=',$device_pubkey;
+  //$str_resp_content='{"ver":1,"vd_set":{"algo":"SHA256withRSA","pubkey":"'.$device_pubkey.'"}}';
   
   respPttpData( $device_odin,$str_content_type,$str_resp_content);
   exit(0);

@@ -15,7 +15,7 @@ import json
 import urllib
 from urllib import quote
  
-sencor_id = 'dht8'   #指定温湿度传感器ID
+sencor_id = 'dht1'   #指定温湿度传感器ID
 
 channel = 26      #引脚号37
 data = []      #温湿度值
